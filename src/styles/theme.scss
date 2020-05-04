@@ -1,0 +1,95 @@
+// COLORS
+$white: rgb(255,255,255);
+
+$silver-sand: rgb(187,189,189);
+
+$shark: rgb(27,27,28);
+
+$blue-ribbon: rgb(3,102,239);
+
+$jumbo:rgb(121,121,122);
+
+$cardinal: rgb(204,29,41);
+
+$cornflower:rgb(93,160,228);
+
+$torea-bay:rgb(14,51,132);
+
+$sun:rgb(253,162,16);
+
+$pastel-green:rgb(86,218,110);
+
+$black-haze:rgb(239,240,240);
+
+$st-tropaz:rgb(42,88,144);
+
+$gray-chateau: rgb(154,162,169);
+
+// FONTS
+
+//imports Robot and Montserrat
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,400i,500,700,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700&display=swap');
+
+
+//Fonts family
+$body-font: 'Roboto', Arial, sans-serif;
+$headings-font: 'Montserrat', sans-serif;
+
+// Sizes
+$font-size-normal: 14px;
+$font-call-out: 16px;
+$font-banner: 32px;
+$font-note: 12px;
+
+// lines height
+$line-height-normal: 26.4px;
+$line-height-banner: 52.8px;
+
+
+
+// classes body
+.normal-text {
+  font-family: $body-font;
+  font-size: $font-size-normal;
+  line-height: $line-height-normal;
+}
+
+.call-out-text{
+  font-family: $body-font;
+  line-height: $line-height-normal;
+  font-size: $font-call-out;
+}
+
+.banner{
+  font-family: $body-font;
+  line-height: $line-height-banner;
+  font-size: $font-banner;
+}
+
+//HEADINGS
+
+//size
+$font-heading-1: 56px;
+$font-heading-2: 48px;
+$font-heading-3: 28px;
+
+  //line-height
+$line-height-1:63px;
+$line-height-2:54px;
+
+// headings class
+
+.heading1{
+  font-size: $font-heading-1;
+  line-height: $line-height-1;
+}
+.heading2{
+  font-size: $font-heading-2;
+  line-height: $line-height-2;
+}
+
+// EXAMPLE
+.preamble {
+  @extend .normal-text;
+}
