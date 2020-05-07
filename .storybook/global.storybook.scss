@@ -1,0 +1,17 @@
+#root > div:first-of-type{
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(230,230,230);
+}
+
+.innerLayout{
+  width: 50%;
+
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+  box-shadow: 3px 3px 5px 6px lightgrey;
+}

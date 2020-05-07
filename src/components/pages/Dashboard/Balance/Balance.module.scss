@@ -1,0 +1,11 @@
+@import "styles/theme";
+
+
+.euroIcon {
+  width: 28px;
+  border-radius: 50%;
+}
+
+.balance{
+  @extend .normal-text;
+}
