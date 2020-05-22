@@ -5,8 +5,8 @@ const accountInfo = {
   id: 3,
   name: "default",
   currentBalance: 44.56,
-  currency: "euro",
-    currencySymbol: '€',
+  currency: "Euro",
+  currencySymbol: "€",
   relatedAccounts: [
     { name: "test1", id: 1 },
     { name: "test2", id: 2 },
@@ -20,18 +20,13 @@ export default {
 
 export const standard = () => {
   return (
-    <div className='outerLayout'>
-      <div className='innerLayout'
-      >
-        <Balance
-          id={accountInfo.id}
-          name={accountInfo.name}
-          currentBalance={accountInfo.currentBalance}
-          currency={accountInfo.currency}
-          currencySymbol={accountInfo.currencySymbol}
-          relatedAccounts={accountInfo.relatedAccounts}
-        />
-      </div>
-    </div>
+    <Balance
+      id={accountInfo.id}
+      name={accountInfo.name}
+      currentBalance={accountInfo.currentBalance}
+      currency={accountInfo.currency}
+      currencySymbol={accountInfo.currencySymbol}
+      relatedAccounts={accountInfo.relatedAccounts}
+    />
   );
 };
