@@ -1,16 +1,16 @@
 import React from "react";
-import styles from "./DateAndDebit.module.scss";
-import format from "date-fns/format";
+import styles from "components/shared/DaySummary/DaySummary.module.scss";
 import cx from "classnames";
+import { formatNamedDate } from "utils/date";
 
-export function DateAndDebit({ date, debit, currencySymbol }) {
-  const givenDate = format(date, "d, MMMM yyyy");
+export function DaySummary({ date, debit, currencySymbol, sign }) {
+  const givenDate = formatNamedDate(date);
 
   return (
     <div className={cx(styles.layoutDateAndDebit, styles.stylesDateAndDebit)}>
       <div className={styles.date}>{givenDate}</div>
       <div className={styles.debit}>
-        - {currencySymbol}
+         {sign} {currencySymbol}
         {debit}
       </div>
     </div>

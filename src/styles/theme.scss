@@ -46,8 +46,6 @@ $font-note: 12px;
 $line-height-normal: 26.4px;
 $line-height-banner: 52.8px;
 
-
-
 // classes body
 .normal-text {
   font-family: $body-font;
@@ -94,6 +92,9 @@ $line-height-2:54px;
   @extend .normal-text;
 }
 
+// standard borders
+$section-separator: 1px solid $black-haze;
+
 // layout classes
 
 .flex-space-between{
@@ -107,5 +108,4 @@ $line-height-2:54px;
   justify-content: center;
 }
 
-// standard borders
-$section-separator: 1px solid $black-haze;
+
