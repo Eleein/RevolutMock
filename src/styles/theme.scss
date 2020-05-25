@@ -93,3 +93,19 @@ $line-height-2:54px;
 .preamble {
   @extend .normal-text;
 }
+
+// layout classes
+
+.flex-space-between{
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.flex-center{
+  display: flex;
+  justify-content: center;
+}
+
+// standard borders
+$section-separator: 1px solid $black-haze;
