@@ -1,0 +1,17 @@
+@import "styles/theme";
+
+.layoutDateAndDebit {
+  width: inherit;
+  padding: 20px 10px;
+  @extend .flex-space-between;
+}
+
+.stylesDateAndDebit {
+  border-top: $section-separator;
+  color: $gray-chateau;
+}
+
+.date,
+.debit {
+  font-size: $font-size-normal;
+}
