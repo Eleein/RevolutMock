@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./Balance.module.scss";
 import { ReactComponent as EuFlag } from "images/eu_flag.svg";
-import {ReactComponent as ArrowDown} from "images/arrowDown.svg";
+import { ReactComponent as ArrowDown } from "images/arrowDown.svg";
 import cx from "classnames";
 
 /* shape of the information is this:
@@ -24,15 +24,16 @@ export function Balance({
   return (
     <div>
       {/* todo  Remove cx  if you are not using multiple classes*/}
-        <div className={styles.balanceAndAccountsLayout}><h1 className={cx(styles.balance)}>
-        <span className={styles.dollars}>
-          {currencySymbol}
+      <div className={styles.balanceAndAccountsLayout}>
+        <h1 className={cx(styles.balance)}>
+          <span className={styles.dollars}>
+            {currencySymbol}
             {dollars}
-        </span>
-            <span className={styles.cent}>.{cents}</span>
+          </span>
+          <span className={styles.cent}>.{cents}</span>
         </h1>
-        <ArrowDown className={styles.arrowDown}/>
-        </div>
+        <ArrowDown className={styles.arrowDown} />
+      </div>
       <div className={styles.containerEuroIcon}>
         <EuFlag className={styles.euroIcon} />
         <p className={styles.currencyName}>{currency}</p>

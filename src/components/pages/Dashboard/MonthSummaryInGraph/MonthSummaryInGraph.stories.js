@@ -4,7 +4,6 @@ import { MonthSummaryInGraph } from "./MonthSummaryInGraph";
 export default {
   title: "Month summary",
   component: MonthSummaryInGraph,
-
 };
 
 const myData = [
@@ -15,10 +14,7 @@ const myData = [
   [7.5, 30],
   [10, 31],
 ];
+
 export const standard = () => {
   return <MonthSummaryInGraph data={myData} />;
 };
-
-//fetch call returned
-
-

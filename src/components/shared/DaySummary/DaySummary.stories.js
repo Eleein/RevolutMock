@@ -10,7 +10,7 @@ const mockData = {
   date: new Date(),
   debit: 32,
   currencySymbol: "€",
-  sign: "-"
+  sign: "-",
 };
 
 export const standard = () => {

@@ -10,7 +10,7 @@ export function DaySummary({ date, debit, currencySymbol, sign }) {
     <div className={cx(styles.layoutDateAndDebit, styles.stylesDateAndDebit)}>
       <div className={styles.date}>{givenDate}</div>
       <div className={styles.debit}>
-         {sign} {currencySymbol}
+        {sign} {currencySymbol}
         {debit}
       </div>
     </div>

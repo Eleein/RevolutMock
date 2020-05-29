@@ -2,8 +2,7 @@ import React from "react";
 import styles from "./MonthSummaryInGraph.module.scss";
 import { Chart } from "react-google-charts";
 
-export function MonthSummaryInGraph({data}) {
-
+export function MonthSummaryInGraph({ data }) {
   return (
     <div className={styles.chartLayout}>
       <Chart
@@ -15,4 +14,3 @@ export function MonthSummaryInGraph({data}) {
     </div>
   );
 }
-
